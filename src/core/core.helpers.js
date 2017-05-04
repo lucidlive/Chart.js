@@ -2,6 +2,10 @@
 /* global document: false */
 'use strict';
 
+if (typeof window === 'undefined') {
+    global.window = {}
+}
+
 var color = require('chartjs-color');
 
 module.exports = function(Chart) {
